@@ -9,10 +9,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <input type="button" value="enviar" onClick={handleTriggerFetch} />
-      <input type="button" value="abortar" onClick={handleSignalCancel} />
+      <h1>Welcome to a basic example to abort Fetch requests</h1>
+      <h3>
+        Press the send button as many times as you want (the request response
+        after 2 seconds). Pressing "Abort" will abort all pending requests
+      </h3>
+      <input type="button" value="Send" onClick={handleTriggerFetch} />
+      <input type="button" value="Abort" onClick={handleSignalCancel} />
     </div>
   );
 }

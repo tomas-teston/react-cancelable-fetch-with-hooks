@@ -8,6 +8,7 @@ export default function useCancellablePromise() {
   init();
 
   const handleTriggerFetch = () => {
+    console.log("request send");
     fetch("https://tomini18.getsandbox.com/delay", {
       signal: controller.signal,
       mode: "cors",
