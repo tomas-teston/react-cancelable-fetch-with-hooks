@@ -16,6 +16,7 @@ function App() {
       </h3>
       <input type="button" value="Send" onClick={handleTriggerFetch} />
       <input type="button" value="Abort" onClick={handleSignalCancel} />
+      <h3>Note: Messages are displayed in the browser console</h3>
     </div>
   );
 }
